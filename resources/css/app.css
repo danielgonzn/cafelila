@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--cafelila-bg: #ffffff;
+		--cafelila-text: #000000;
+		--cafelila-primary: #562b05;
+		--cafelila-primary-soft: #7a4a21;
+		--cafelila-muted: #f7f1ea;
+		--cafelila-whatsapp: #25d366;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: 'Roboto', sans-serif;
+		color: var(--cafelila-text);
+		background: radial-gradient(circle at top right, #efe2d4 0%, #ffffff 46%);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Montserrat', sans-serif;
+	}
+}
+
+@layer components {
+	.container-shell {
+		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold text-white transition;
+		background-color: var(--cafelila-primary);
+	}
+
+	.btn-primary:hover {
+		background-color: var(--cafelila-primary-soft);
+	}
+
+	.card-surface {
+		@apply rounded-2xl border border-stone-200 bg-white shadow-sm;
+	}
+
+	.section-title {
+		@apply text-3xl md:text-4xl font-semibold tracking-tight;
+	}
+
+	.ornament {
+		background-image: linear-gradient(90deg, rgba(86, 43, 5, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+	}
+}

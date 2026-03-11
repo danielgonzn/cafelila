@@ -10,6 +10,7 @@
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">Dashboard</x-nav-link>
+                    <x-nav-link :href="route('admin.home-banners.index')" :active="request()->routeIs('admin.home-banners.*')">Banners</x-nav-link>
                     <x-nav-link :href="route('admin.products.index')" :active="request()->routeIs('admin.products.*')">Productos</x-nav-link>
                     <x-nav-link :href="route('admin.galleries.index')" :active="request()->routeIs('admin.galleries.*')">Galeria</x-nav-link>
                     <x-nav-link :href="route('admin.faqs.index')" :active="request()->routeIs('admin.faqs.*')">FAQ</x-nav-link>
@@ -57,6 +58,7 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">Dashboard</x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.home-banners.index')" :active="request()->routeIs('admin.home-banners.*')">Banners</x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.products.index')" :active="request()->routeIs('admin.products.*')">Productos</x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.galleries.index')" :active="request()->routeIs('admin.galleries.*')">Galeria</x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.faqs.index')" :active="request()->routeIs('admin.faqs.*')">FAQ</x-responsive-nav-link>
